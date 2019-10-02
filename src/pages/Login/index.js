@@ -2,12 +2,11 @@ import React, {useState}  from 'react';
 import api from '../../services/api'
 
 
-export default function Login() {
+export default function Login({history}) {
   const [email, setEmail] = useState('');
 
   async function handleSubmit(event) {
     event.preventDefault();
-
     const response = await api.get(`/sessions`, {params: {
       email: email
     }});
@@ -20,7 +19,7 @@ export default function Login() {
     
     localStorage.setItem('user_id', _id);
 
-    console.log(_id)
+    history.push('/dashboard')
 
   }
 
