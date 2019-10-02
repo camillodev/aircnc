@@ -9,10 +9,21 @@ function App() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log(email);
 
-    const response = await api.post('/sessions', {email});
-    console.log(response);
+    const response = await api.get(`/sessions`, {params: {
+      email: email
+    }});
+    
+    if(!response.data || response.data.error){
+      alert("user not found");
+      return
+    }
+    const { _id } = response.data;
+    
+    localStorage.setItem('user_id', _id);
+
+    console.log(_id)
+
   }
 
 
