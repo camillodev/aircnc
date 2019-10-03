@@ -12,7 +12,7 @@ export default function Menu(){
         <Nav>
           <Link className="no-link menu" to={'/dashboard'}>Dashboard</Link>
           <Link className="no-link menu" to={'/my-spots'}>My Spots</Link>
-          <Link className="no-link menu" to={'/profile'}>Profile</Link>
+          {/* <Link className="no-link menu" to={'/profile'}>Profile</Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
