@@ -11,7 +11,7 @@ export default function Menu(){
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>
           <Link className="no-link menu" to={'/dashboard'}>Dashboard</Link>
-          <Link className="no-link menu" to={'/new-spot'}>My Spots</Link>
+          <Link className="no-link menu" to={'/my-spots'}>My Spots</Link>
           <Link className="no-link menu" to={'/profile'}>Profile</Link>
         </Nav>
       </Navbar.Collapse>

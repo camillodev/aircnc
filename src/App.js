@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import NewSpot from './pages/NewSpot';
 import Menu from './_shared/Menu';
+import MySpot from './pages/MySpot';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
                 <Route path="/" exact component={Login}/>
                 <Route path="/dashboard" component={Dashboard}/>
                 <Route path="/new-spot" component={NewSpot}/>
+                <Route path="/my-spots" component={MySpot}/>
               </Switch>
             </div>
          </div>
