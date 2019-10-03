@@ -38,7 +38,7 @@ export default function NewSpot({history}) {
        className={thumbnail ? 'has-thumbnail': ''}
        >
          <input type="file" onChange={event => setThumbnail(event.target.files[0])}/>
-         <img src={camera} alt="Select image"/>
+         <img src={camera} alt="Camera import icon"/>
        </label>
 
        <label htmlFor="company">EMPRESA</label>

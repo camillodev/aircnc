@@ -23,13 +23,32 @@ body{
   -webkit-font-smoothing: antialiased !important;
 }
 
-.container{
+.menu {
+  height: 100% !important;
+  font-weight: 600;
+}
+.app-container{
   margin: 80px auto;
   max-width: 450px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.no-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.no-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  padding-right: .5rem;
+    padding-left: .5rem;
+    display: block;
+    padding: .5rem 1rem;
+  
 }
 
 .content {
@@ -50,7 +69,9 @@ body{
   display: flex;
   flex-direction: column;
 }
-
+.bg-black{
+  background: blue; 
+}
 .content form label {
   font-size: 14px;
   color: #444;
