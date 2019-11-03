@@ -14,7 +14,7 @@ class App extends Component {
     <Router>
         <>
           <Menu></Menu>
-          <div className="app-container">
+          <div className="container">
             <div className="content">
               <Switch>
                 <Route path="/" exact component={Login}/>
