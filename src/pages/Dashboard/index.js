@@ -8,7 +8,7 @@ export default function DashBoard(){
   
   useEffect(() => {
     async function loadSpots() {
-      const user_id = localStorage.getItem('user_id');
+      // const user_id = localStorage.getItem('user_id');
       const response = await api.get('/spots');
 
       setSpots(response.data);
